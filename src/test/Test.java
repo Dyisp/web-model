@@ -11,6 +11,7 @@ import javax.annotation.Resource;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration({"classpath*:/spring-mvc.xml"})
 public class Test {
+    
 
     @Resource
     private TestService testService;
