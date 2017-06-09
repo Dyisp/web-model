@@ -185,9 +185,11 @@
   <profiles>
     <profile>
       <id>dev</id>
-      <properties>
-        <buildconfig>lglc-dev.properties</buildconfig>
-      </properties>
+      <build>
+        <filters>
+          <filter>lglc-dev.properties</filter>
+        </filters>
+      </build>
       <activation>
         <activeByDefault>true</activeByDefault>
       </activation>
@@ -195,9 +197,11 @@
     <!-- real -->
     <profile>
       <id>publish</id>
-      <properties>
-        <buildconfig>lglc-real.properties</buildconfig>
-      </properties>
+      <build>
+        <filters>
+          <filter>lglc-real.properties</filter>
+        </filters>
+      </build>
     </profile>
   </profiles>
 

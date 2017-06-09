@@ -25,6 +25,8 @@ public class TestController {
     @RequestMapping("getTest")
     public String test(Model model, String name){
 
+        LOGGER.info("test controller");
+
         String data = testService.getTest();
         model.addAttribute("data",data);
         if(!StringUtils.isEmpty(name)){
